@@ -1,19 +1,24 @@
-# CosmicAnalyzer
+The “CosmicAnalyzer” application is designed to analyze periodic correlations of energy in objects from different cosmic and quantum scales.
 
-CosmicAnalyzer to zaawansowana aplikacja desktopowa do przeglądania, analizowania i porównywania danych naukowych w różnych skalach - od kwantowej do kosmicznej.
 
-![CosmicAnalyzer Screenshot](attached_assets/image_1747785190385.png)
 
-## Funkcje
+Features
 
-- **Przeglądanie obiektów w różnych skalach**: Od skali kwantowej po kosmiczną
-- **Wizualizacje danych**: Tabela, wykres radarowy, wizualizacja fal i kryształów
-- **Animacje kryształów czasu**: Interaktywne animacje z efektami oscylacji
-- **Porównywanie obiektów**: Zaawansowane algorytmy do porównywania właściwości obiektów w różnych skalach
-- **Wykrywanie kryształów czasu**: Analiza właściwości obiektów pod kątem zachowań charakterystycznych dla kryształów czasu
-- **Eksport raportów**: Generowanie raportów PDF ze zrzutami ekranu i analizą danych
 
-## Wymagania
+
+- **View objects at different scales**: From quantum to cosmic scales
+
+- **Data visualizations**: Table, radar chart, wave and crystal visualization (does not work).
+
+- **Time Crystal Animations**: Interactive animations with oscillation effects (doesn't work).
+
+- **Object Comparison**: Advanced algorithms for comparing properties of objects at different scales.
+
+- **Time Crystal Detection**: Analyze object properties for behaviors characteristic of time crystals.
+
+- **Report Export**: Generate PDF reports with screenshots and data analysis (does not work).
+
+## Requirements
 
 - Python 3.9+
 - PyQt5
@@ -24,46 +29,47 @@ CosmicAnalyzer to zaawansowana aplikacja desktopowa do przeglądania, analizowan
 - scikit-learn
 - reportlab
 
-## Instalacja
+## Installation
 
-```bash
-# Instalacja zależności
+``bash
+# Install dependencies
 pip install PyQt5 pyqtgraph matplotlib numpy scipy scikit-learn reportlab
-```
+```.
 
-## Uruchamianie
+## Running
 
-### Tryb graficzny (desktop)
+### Graph mode (desktop)
 
-```bash
+``bash
 python main.py --gui
-```
+```.
 
-### Tryb bez interfejsu (np. dla środowiska Replit)
+### Non-interface mode (e.g. for Replit environment)
 
 ```bash
 python main.py --headless
-```
+```.
 
-## Struktura projektu
+## Project structure
 
-- `analysis/` - Algorytmy analizy danych i wykrywania podobieństw
-- `data/` - Klasy do ładowania i zarządzania danymi
-- `export/` - Funkcje eksportu danych i raportów
-- `ui/` - Komponenty interfejsu użytkownika
-- `utils/` - Narzędzia pomocnicze i stałe
-- `attached_assets/` - Dane przykładowe
+- `analysis/` - Algorithms for data analysis and similarity detection
+- `data/` - Classes for loading and managing data
+- `export/` - Functions for exporting data and reports
+- `ui/` - User interface components
+- `utils/` - Support tools and constants
+- `attached_assets/` - Sample data
 
-## Wykorzystanie
+## Usage
 
-1. Uruchom aplikację w trybie GUI
-2. Załaduj plik danych z różnymi obiektami (np. `attached_assets/nowe_obiekty.json`)
-3. Przeglądaj obiekty w różnych skalach na drzewie po lewej stronie
-4. Wybierz obiekt, aby zobaczyć jego szczegóły w różnych widokach
-5. Porównuj obiekty używając funkcji "Find Similar"
-6. Analizuj obiekty pod kątem właściwości kryształów czasu
-7. Generuj raporty PDF z analizą i wizualizacjami
+1 Start the application in GUI mode
+2. load a data file with various objects (e.g. `attached_assets/new_objects.json`)
+3. browse the objects in different scales on the tree on the left side
+4. select an object to see its details in different views
+5. compare objects using the "Find Similar" function
+6. analyze objects for time crystal properties
+7. generate PDF reports with analysis and visualizations
 
-## Kontakt
+## Contact
 
-Jeśli masz pytania lub potrzebujesz pomocy, skontaktuj się z autorem projektu.
+If you have questions or need help, please contact the author of the project:
+biuro@drnico.pl
