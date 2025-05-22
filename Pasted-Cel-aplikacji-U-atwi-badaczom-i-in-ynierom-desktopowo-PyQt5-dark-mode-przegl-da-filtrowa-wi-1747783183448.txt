@@ -1,0 +1,53 @@
+Cel aplikacji:
+Ułatwić badaczom i inżynierom desktopowo (PyQt5, dark-mode) przeglądać, filtrować, wizualizować i porównywać rzeczywiste dane obiektów w dziewięciu skalach, automatycznie wyszukiwać kandydatów na kryształy czasu oraz generować PDF-owe raporty z interpretacjami i komentarzami.
+
+Skale obiektów:
+cosmic, galactic, stellar, planetary, human, cellular, molecular, atomic, quantum
+
+Architektura i import danych:
+
+Jedno główne okno QMainWindow z QSplitterem:
+
+Lewy panel: QTreeView ze skalami i checkboxem “observed only” + QLineEdit do wyszukiwania
+
+Prawy panel: QTabWidget z zakładkami (Tabela, Waveform, Radar, Crystal View)
+
+MenuBar/ToolBar: Open JSON, Reload, Find Similar, Export PDF, Exit
+
+DataLoader waliduje JSON ({id, scale, name, data}), grupuje obiekty w katalogi i tagi
+
+Interfejs (dark-mode):
+
+Jeden spójny styl QSS (ciemne tła, jasne teksty)
+
+QTableView z sortowaniem, ukrywaniem kolumn i dynamicznymi tooltipami (jednostki, zakres, opis)
+
+Ikonka “[i]” obok nazwy obiektu otwierająca QDockWidget z metadanymi i komentarzami
+
+Wizualizacje:
+
+Animowane wykresy falowe (pyqtgraph) – odtwarzanie czasowych sygnałów O(t) z play/pause i suwakami
+
+Radar charts (matplotlib w FigureCanvasQTAgg) – animowane porównanie wielowymiarowych cech
+
+Schematyczna animacja kryształów czasu (QGraphicsView lub GLViewWidget) – punkty/spiny kolorowane zgodnie z danymi Floquet
+
+Heatmapy i konturowe – rozkłady amplitud czy energii w czasie i parametrze
+
+Analiza i ML:
+
+Moduł “Find Similar” wykorzystujący scikit-learn (metrical clustering, cosine/euclidean) do zwracania top-N najbardziej zbliżonych obiektów w przestrzeni wybranych cech
+
+Prosty silnik reguł lub lekki model ML do sugerowania kandydatów na kryształy czasu przy spełnieniu warunków (długi czas koherencji, subharmonic response itp.)
+
+Raportowanie (PDF):
+
+Generowanie pełnych raportów PDF (reportlab) z: nagłówkiem, listą wybranych obiektów, animowanymi snapshotami wykresów, komentarzami i interpretacjami analitycznymi
+
+Dodatki:
+
+Zapamiętywanie stanu (ostatni plik, filtry)
+
+Możliwość definiowania własnych katalogów i tagów
+
+Eksport tabeli i raportów do CSV / PDF / TXT / JSON

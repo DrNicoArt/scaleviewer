@@ -1,0 +1,6 @@
+Improve PDF reports and fix issues with the time crystal visualization
+
+Adds error handling and fixes temporary file creation in PDF export, and adds a try-except block in CrystalView to handle potential errors.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: 31e864cf-202d-4b31-a5a7-92e0971c15b2

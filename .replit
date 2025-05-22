@@ -1,0 +1,41 @@
+modules = ["python-3.11"]
+
+[nix]
+channel = "stable-24_05"
+packages = ["cairo", "ffmpeg-full", "freefont_ttf", "freetype", "ghostscript", "glibcLocales", "gobject-introspection", "gtk3", "pkg-config", "qhull", "tcl", "tk"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "CosmicAnalyzer"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "cosmic_analyzer"
+
+[[workflows.workflow]]
+name = "CosmicAnalyzer"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "pip install PyQt5 pyqtgraph matplotlib numpy scipy scikit-learn reportlab && python main.py"
+waitForPort = 5000
+
+[[workflows.workflow]]
+name = "cosmic_analyzer"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "export QT_QPA_PLATFORM=offscreen && python main.py"
+
+[deployment]
+run = ["sh", "-c", "pip install PyQt5 pyqtgraph matplotlib numpy scipy scikit-learn reportlab && python main.py"]

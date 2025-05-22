@@ -1,0 +1,184 @@
+{
+  "objects": [
+    {
+      "id": "cosmic1",
+      "scale": "cosmic",
+      "name": "Observable Universe",
+      "data": {
+        "age": "13.80 billion years",
+        "comoving_diameter": "93 billion light years",
+        "critical_density": "5.3 GeV/m³"
+      }
+    },
+    {
+      "id": "cosmic2",
+      "scale": "cosmic",
+      "name": "Cosmic Microwave Background",
+      "data": {
+        "mean_temperature": "2.725 K",
+        "temperature_anisotropy_rms": "18 μK",
+        "peak_frequency": "160.2 GHz"
+      }
+    },
+    {
+      "id": "galactic1",
+      "scale": "galactic",
+      "name": "Milky Way",
+      "data": {
+        "stellar_mass": "1.5 × 10^12 M☉",
+        "disk_diameter": "100 000 light years",
+        "rotation_curve_flat_velocity": "220 km/s"
+      }
+    },
+    {
+      "id": "galactic2",
+      "scale": "galactic",
+      "name": "Andromeda Galaxy (M31)",
+      "data": {
+        "stellar_mass": "1.0 × 10^12 M☉",
+        "disk_diameter": "220 000 light years",
+        "approach_velocity": "−110 km/s"
+      }
+    },
+    {
+      "id": "stellar1",
+      "scale": "stellar",
+      "name": "Sun",
+      "data": {
+        "mass": "1 M☉ (1.989 × 10^30 kg)",
+        "radius": "696 340 km",
+        "luminosity": "3.828 × 10^26 W"
+      }
+    },
+    {
+      "id": "stellar2",
+      "scale": "stellar",
+      "name": "Betelgeuse",
+      "data": {
+        "mass": "18 M☉",
+        "radius": "764 R☉ (≈532 million km)",
+        "luminosity": "1.2 × 10^31 W"
+      }
+    },
+    {
+      "id": "planetary1",
+      "scale": "planetary",
+      "name": "Earth",
+      "data": {
+        "mass": "5.972 × 10^24 kg",
+        "mean_radius": "6 371 km",
+        "orbital_period": "365.256 days"
+      }
+    },
+    {
+      "id": "planetary2",
+      "scale": "planetary",
+      "name": "Jupiter",
+      "data": {
+        "mass": "1.898 × 10^27 kg",
+        "mean_radius": "69 911 km",
+        "orbital_period": "11.862 years"
+      }
+    },
+    {
+      "id": "human1",
+      "scale": "human",
+      "name": "Average Adult Human",
+      "data": {
+        "height_mean": "1.70 m",
+        "mass_mean": "62 kg",
+        "life_expectancy_global": "72.6 years"
+      }
+    },
+    {
+      "id": "human2",
+      "scale": "human",
+      "name": "Human Brain",
+      "data": {
+        "mass": "1.40 kg",
+        "neuron_count": "86 billion",
+        "volume": "1.20 L"
+      }
+    },
+    {
+      "id": "cellular1",
+      "scale": "cellular",
+      "name": "Red Blood Cell",
+      "data": {
+        "diameter": "6–8 µm",
+        "thickness": "2 µm (center), 1 µm (edge)",
+        "lifetime": "120 days"
+      }
+    },
+    {
+      "id": "cellular2",
+      "scale": "cellular",
+      "name": "Motor Neuron (soma)",
+      "data": {
+        "soma_diameter": "40 µm",
+        "axon_length_max": "1 m",
+        "synapse_count": "10 000–100 000"
+      }
+    },
+    {
+      "id": "molecular1",
+      "scale": "molecular",
+      "name": "Water Molecule (H₂O)",
+      "data": {
+        "molecular_weight": "18.015 g/mol",
+        "O–H bond_length": "0.958 Å",
+        "H–O–H bond_angle": "104.5°"
+      }
+    },
+    {
+      "id": "molecular2",
+      "scale": "molecular",
+      "name": "DNA Base Pair (GC)",
+      "data": {
+        "pair_molecular_weight": "607.4 g/mol",
+        "hydrogen_bonds": 3,
+        "base_pair_distance": "0.34 nm"
+      }
+    },
+    {
+      "id": "atomic1",
+      "scale": "atomic",
+      "name": "Hydrogen Atom",
+      "data": {
+        "atomic_radius": "53 pm",
+        "first_ionization_energy": "13.598 eV",
+        "ground_state_wavelength": "121.6 nm (Lyman-α)"
+      }
+    },
+    {
+      "id": "atomic2",
+      "scale": "atomic",
+      "name": "Carbon Atom",
+      "data": {
+        "atomic_radius": "70 pm",
+        "first_ionization_energy": "11.260 eV",
+        "electron_affinity": "1.262 eV"
+      }
+    },
+    {
+      "id": "quantum1",
+      "scale": "quantum",
+      "name": "Electron",
+      "data": {
+        "rest_mass": "9.109 × 10⁻³¹ kg",
+        "spin": "1/2 ħ",
+        "elementary_charge": "−1.602 × 10⁻¹⁹ C"
+      }
+    },
+    {
+      "id": "quantum2",
+      "scale": "quantum",
+      "name": "Photon (λ = 550 nm)",
+      "data": {
+        "energy": "3.59 × 10⁻¹⁹ J",
+        "momentum": "1.20 × 10⁻²⁸ kg·m/s",
+        "spin": "1 ħ"
+      }
+    }
+  ]
+}
